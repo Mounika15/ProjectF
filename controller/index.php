@@ -10,7 +10,7 @@ if($action == NULL)
 }
 if($action == "show_login_page")
 {
-  include('./index.php');
+  include('./login.php');
 }else if($action == 'test_user')
 {
   $username = $_POST['email'];
@@ -45,7 +45,7 @@ if($action == "show_login_page")
       // echo "already exist";
         header("Location: ../errors/uexist.php");
    }else{
-       header("Location: ../index.php");
+       header("Location: ../login.php");
    }
   }
 else if ($action == 'add')
