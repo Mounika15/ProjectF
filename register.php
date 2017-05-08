@@ -3,6 +3,12 @@
 <head>
 <title>Register</title>
  <link rel="stylesheet" type="text/css" href="style.css"/>
+ <style>
+body {
+    background-image: url("http://www.whizjuniors.com/Content/img/banner.jpg");
+    background-color: lightblue;
+}
+</style>
 </head>
 <body> 
 <div class="header"> 
@@ -12,12 +18,13 @@
 </div>
 </body>
 
+
 <body>
   <div class="body"></div>
 		<div class="grad"></div>
 		
 		<br>
-		<div class="login">
+		<div class="login" align="center">
 		<form class="form-login" method="post" action="login.php">
 		        <input type="text" placeholder="First Name" name="firstname"><br>
 				<input type="text" placeholder="Last Name" name="lastname"><br>
