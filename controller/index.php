@@ -26,7 +26,7 @@ if($action == "show_login_page")
     
    
   }else{
-    header("Location: ../error.php");
+    header("Location: ../errors/error.php");
   }
 }else if ($action == 'register')
 {
@@ -43,7 +43,7 @@ if($action == "show_login_page")
        if($exit == true)
        {
       // echo "already exist";
-        header("Location: ../uexist.php");
+        header("Location: ../errors/uexist.php");
    }else{
        header("Location: ../index.php");
    }
