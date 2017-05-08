@@ -18,7 +18,7 @@
 		
 		<br>
 		<div class="login">
-		<form class="form-login" method="post" action="./controller/login.php">
+		<form class="form-login" method="post" action="login.php">
 		        <input type="text" placeholder="First Name" name="firstname"><br>
 				<input type="text" placeholder="Last Name" name="lastname"><br>
 				<input type="text" placeholder="Contact No" name="contact"><br>
