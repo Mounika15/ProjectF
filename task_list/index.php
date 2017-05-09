@@ -10,7 +10,7 @@ if($action == NULL)
 }
 if($action == "show_login_page")
 {
-  include('./login.php');
+  include('./index.php');
 }else if($action == 'test_user')
 {
   $username = $_POST['email'];
@@ -21,12 +21,12 @@ if($action == "show_login_page")
    $id = $_SESSION['id'];
    $result = getTodoItems($id);
    $result2 = completedItems($id);
-    include('./controller/list.php');
+    include('list.php');
    
     
    
   }else{
-    header("Location: ../errors/error.php");
+    header("Location: ../error/badinfo.php");
   }
 }else if ($action == 'register')
 {
@@ -43,9 +43,9 @@ if($action == "show_login_page")
        if($exit == true)
        {
       // echo "already exist";
-        header("Location: ../errors/uexist.php");
+        header("Location: ../error/userexist.php");
    }else{
-       header("Location: ../login.php");
+       header("Location: ../index.php");
    }
   }
 else if ($action == 'add')
@@ -84,7 +84,7 @@ else if($action == 'edittask'){
   // echo $editid;
      $result3 = getTask($editid);
      include('edittask.php');
-   //  header("Location: edit.php")
+   //  header("Location: edittask.php")
 }
 else if ($action == 'deletetask'){
     //echo "hgdsa";
