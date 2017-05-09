@@ -2,7 +2,7 @@
 
 <body>
 <div>
-<strong> <p> © To Do List.</p></strong>
-<strong> <p> Created By - Mounika Guntupalli</p></strong>
+<fieldset style="width:30%"><legend>To Do List</legend> 
+<strong> <p> By - Mounika Guntupalli</p></strong>
 </div>
 </body>
