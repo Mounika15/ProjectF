@@ -1,14 +1,14 @@
 <html>
 <style>
 body {
-    background-image: url("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRVII24pF7GZKQxi5Ss03RZbwMcRGJatFIXTNsH7h7VBVD1i2Eg");
+    background-image: url("https://www.walldevil.com/wallpapers/h12/background-wallpaper-web-images-sky-wallpaperweb-wallpapers.jpg");
 }
 </style>
   <body>
  <h1> To do list system</h1>
  <strong> <p> Welcome, <?php $fname = $_SESSION['first_name']; echo $fname;?> <?php $lname = $_SESSION['last_name']; echo $lname;?></p></strong>
 
-   <h3><strong>Task To Complete</strong></h3>
+   <h3><strong>Tasks To Do</strong></h3>
     <table>
        <tr>
       <th style="text-align: center;">Task</th>
@@ -34,7 +34,7 @@ body {
         </td>
 	<td><form style="margin-top: 15px;" action="index.php" method="post">
 	    <input type="hidden" name="user_id" value="<?php echo $res['id']; ?>">
-	    <input type="submit" style="text-align: center; font-family: cursive;" value="Update Status">
+	    <input type="submit" style="text-align: center; font-family: cursive;" value="completed">
 	    <input type="hidden" name='action' value="statusupdate">
 	    </form>
         </td>
