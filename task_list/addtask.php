@@ -1,11 +1,10 @@
 <html>
 <body>
-<div class="welcome">
 <h1>Add Task</h1>
 <strong> <p> Welcome, <?php echo $_COOKIE['my_name']?> <?php echo $_COOKIE['my_lname']?></p></strong>
 </div>
 <div class="login">
-<form style="margin-left:18px;" method = 'post' action='index.php'>
+<form style="margin-left:8px;" method = 'post' action='index.php'>
 <strong> Task: </strong><br> <input type='text' name='task'/><br><br>
 <strong> Description: </strong><br> <input type='text' name='description'/><br><br>
 <strong> Date: </strong><br> <input type="date" name = "datetodo"><br><br>
